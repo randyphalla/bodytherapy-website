@@ -4945,7 +4945,7 @@ ul.off-canvas-list {
   margin: 0;
   padding: 0; }
   ul.off-canvas-list li label {
-    background: #4778FF;
+    /*background: #4778FF;*/
     border-bottom: none;
     /*border-top: 1px solid #5e5e5e;*/
     color: #999999;
@@ -4963,9 +4963,11 @@ ul.off-canvas-list {
      text-align: center;
     transition: background 300ms ease; }
     ul.off-canvas-list li a:hover {
-      background: #4778FF; }
+      background: #4778FF; 
+    }
     ul.off-canvas-list li a:active {
-      background: #4778FF; }
+      background: #4778FF; 
+    }
 
 .move-right > .inner-wrap {
   -webkit-transform: translate3d(15.625rem, 0, 0);
@@ -5073,7 +5075,7 @@ ul.off-canvas-list {
   z-index: 1003; }
 .offcanvas-overlap .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.3), 4px 0 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
