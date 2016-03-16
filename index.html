@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Body Therapy App</title>
     <link href='https://fonts.googleapis.com/css?family=Rubik:400,300,500,700,500italic,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -28,7 +28,7 @@
       <h1 class="hidden">Side Menu Nav</h1>
       <ul class="off-canvas-list">
         <li><label>
-          <img src="img/logo2.svg" alt="bodytherapy-logo">
+        <img src="img/logo2.svg" alt="bodytherapy-logo">
         </label></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
@@ -39,8 +39,8 @@
     </aside>
 
     <!-- TABLET/DESKTOP -->
+    <div data-magellan-expedition="fixed">
     <header class="row hide-for-small-only">
-      
       <div class="medium-4 columns logo">
         <h1 class="hidden">Logo</h1>
         <center>
@@ -54,17 +54,17 @@
         <h1 class="hidden">Tablet-Desktop Section</h1>
         <nav class="mainNav">
           <h1 class="hidden">Tablet-Desktop Menu Nav</h1>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#Tech">Technologies</a></li>
-            <li><a href="#developerTitle">Developer</a></li>
-            <li><a href="#buyApp">Coming Soon</a></li>
+          <ul >
+            <li data-magellan-arrival="#about"><a href="#about">About</a></li>
+            <li data-magellan-arrival="features"><a href="#features">Features</a></li>
+            <li data-magellan-arrival="#Tech"><a href="#Tech">Technologies</a></li>
+            <li data-magellan-arrival="#developerTitle"><a href="#developerTitle">Developer</a></li>
+            <li data-magellan-arrival="#buyApp"><a href="#buyApp">Coming Soon</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
+    </div>
   <section class="main-section">
   <h1 class="hidden">Content</h1>
   <!-- Banner -->
@@ -154,39 +154,39 @@
   <h1 class="hidden">TECHNOLOGIES Icons</h1>
   <div class="row techIcons">
       <div class="small-12 medium-4 columns">
-        <img class="tech" src="img/HTML5.png" alt="mockup">
+        <img class="tech" src="img/html5.svg" alt="mockup">
       </div>
       <div class="small-12 medium-4 columns">
-        <img class="tech" src="img/css3.png" alt="mockup">
+        <img class="tech" src="img/CSS3.svg" alt="mockup">
       </div>
-      <div class="small-12 medium-4 columns">
+      <div class="small-12 medium-4 columns padDown">
          <img class="tech" src="img/sass.png" alt="mockup">
       </div>
   </div>
 
   <div class="row techIcons">
         <div class="small-12 medium-4 columns">
-         <img class="tech" src="img/mongodb.png" alt="mockup">
+         <img class="tech" src="img/mongodb.svg" alt="mockup">
       </div>
       <div class="small-12 medium-4 columns">
-        <img class="tech"src="img/express.png" alt="mockup">
+        <img class="tech"src="img/express.svg" alt="mockup">
       </div>
       <div class="small-12 medium-4 columns">
-        <img class="tech"src="img/AngularJS.png" alt="mockup">
+        <img class="tech"src="img/angularjs.svg" alt="mockup">
       </div>
   </div>
 
   <div class="row techIcons">
-    <div class="small-12 medium-4 columns">
-      <img class="tech" src="img/nodejs.png" alt="mockup">
+    <div class="small-12 medium-4 columns padDown">
+      <img class="tech" src="img/nodejs.svg" alt="mockup">
+    </div>
+
+    <div class="small-12 medium-4 columns padDown">
+      <img class="tech" src="img/ionic.svg" alt="mockup">
     </div>
 
     <div class="small-12 medium-4 columns">
-      <img class="tech" src="img/Ionic_Logo.png" alt="mockup">
-    </div>
-
-    <div class="small-12 medium-4 columns">
-      <img class="tech" src="img/phonegap.png" alt="mockup">
+      <img class="tech" src="img/phonegap.svg" alt="mockup">
     </div>
   </div>
 
@@ -208,6 +208,7 @@
         <figure><img src="img/me.png" alt="me"></figure>
         <h1>Randy Phalla</h1>
         <p>Hello There. I’m Randy Phalla and the creator of Body Therapy. I’m a Graphic Designer & Front-End Developer. I was born and raised in London, Ontario. I graduated from the Fanshawe Graphic Design Program in 2014. I’m currently in the Interactive Media Specialist Program at Fanshawe College in Downtown Area. Where I learn new technologies and further develop my web development skills to become a web developer & designer. I enjoy working out at the gym, watching movies, tv shows, playing computer games, learn about new technologies, graphic design trends and staying up to date.</p>
+        <p class="resume"><a href="img/RandyPhallaDesignResume.pdf" download>Check out my resume</a></p>
       </div>
     </div>
   </section>
@@ -239,7 +240,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.offcanvas.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
     <script>
       $(document).foundation();
     </script>
