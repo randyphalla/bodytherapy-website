@@ -1,38 +1,50 @@
-.header .mobile-view {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #0080FF; }
-  .header .mobile-view .menu {
-    text-align: left; }
-    .header .mobile-view .menu .fas {
-      margin-top: 4px;
-      color: #ffffff; }
-  .header .mobile-view .logo {
-    text-align: center; }
-    .header .mobile-view .logo img {
-      width: 100px; }
-  .header .mobile-view .email {
-    text-align: right; }
-    .header .mobile-view .email .far {
-      margin-top: 4px;
-      color: #ffffff; }
+.title {
+  font-family: sans-serif;
+  font-size: 1.8em; }
 
-.header .desktop-view {
-  background-color: #3CC0FA;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .header .desktop-view .logo img {
-    width: 150px; }
-  .header .desktop-view .nav-links ul {
-    padding-left: 0;
-    margin-top: 16px;
-    margin-bottom: 0;
-    list-style-type: none;
-    text-align: right; }
-    .header .desktop-view .nav-links ul li {
-      display: inline-block;
-      margin-left: 10px;
-      margin-right: 10px; }
-      .header .desktop-view .nav-links ul li a {
-        text-decoration: none;
+.secondary-title {
+  font-family: sans-serif;
+  font-size: 1.5em; }
+
+.body-text {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.8; }
+
+.header {
+  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  .header .mobile-view {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .header .mobile-view .menu {
+      text-align: left; }
+      .header .mobile-view .menu .fas {
+        margin-top: 4px;
         color: #ffffff; }
+    .header .mobile-view .logo {
+      text-align: center; }
+      .header .mobile-view .logo img {
+        width: 100px; }
+    .header .mobile-view .email {
+      text-align: right; }
+      .header .mobile-view .email .far {
+        margin-top: 4px;
+        color: #ffffff; }
+  .header .desktop-view {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .header .desktop-view .logo img {
+      width: 150px; }
+    .header .desktop-view .nav-links ul {
+      padding-left: 0;
+      margin-top: 16px;
+      margin-bottom: 0;
+      list-style-type: none;
+      text-align: right; }
+      .header .desktop-view .nav-links ul li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px; }
+        .header .desktop-view .nav-links ul li a {
+          text-decoration: none;
+          color: #ffffff; }

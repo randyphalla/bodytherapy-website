@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './tech-item.component.css';
 
 class TechItemComponent extends Component {
   render() {

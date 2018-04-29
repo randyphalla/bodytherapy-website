@@ -1,3 +1,16 @@
+.title {
+  font-family: sans-serif;
+  font-size: 1.8em; }
+
+.secondary-title {
+  font-family: sans-serif;
+  font-size: 1.5em; }
+
+.body-text {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.8; }
+
 .hidden {
   display: none; }
 
@@ -7,4 +20,63 @@ img {
 body {
   font-family: sans-serif;
   font-size: 1em;
-  color: #0080FF !important; }
+  color: #0080FF; }
+
+.hero-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  .hero-banner .hero-banner-text h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center; }
+  .hero-banner .hero-banner-text .bold-text {
+    font-weight: bold; }
+  .hero-banner img {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .hero-banner {
+      padding-top: 40px;
+      padding-bottom: 40px; }
+      .hero-banner .hero-banner-text {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .hero-banner .hero-banner-text h2 {
+          font-size: 2.3em;
+          text-align: left; } }
+  @media screen and (min-width: 992px) {
+    .hero-banner {
+      padding-top: 40px;
+      padding-bottom: 40px; }
+      .hero-banner .hero-banner-text h2 {
+        font-size: 3.2em;
+        text-align: left; } }
+
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .about-us .title {
+    text-align: center; }
+  .about-us .body-text {
+    text-align: center; }
+
+.features .title {
+  text-align: center; }
+
+.technologies .title {
+  text-align: center; }
+
+.about-me .title,
+.about-me .secondary-title,
+.about-me .body-text {
+  text-align: center; }
+
+.available-on {
+  padding: 30px 0;
+  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
+  .available-on .secondary-title {
+    text-align: center;
+    color: #ffffff; }

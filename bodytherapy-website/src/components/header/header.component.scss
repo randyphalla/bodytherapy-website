@@ -1,10 +1,11 @@
 @import "../../assets/scss/shared.scss";
 
 .header {
+  background: linear-gradient(150deg, $primary-color, $secondary-color);
+
   .mobile-view {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: $primary-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     .menu {
       text-align: left;
@@ -33,7 +34,6 @@
   }
 
   .desktop-view {
-    background-color: $secondary-color;
     padding-top: 10px;
     padding-bottom: 10px;
 

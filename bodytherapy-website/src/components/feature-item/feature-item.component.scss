@@ -1,0 +1,30 @@
+.feature-item {
+  padding: 40px 0;
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  .feature-item-info {
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    img {
+      margin-bottom: 0;
+    }
+
+    .feature-item-info {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      text-align: right;
+
+      &.right-side {
+        text-align: left !important;
+      }
+    }
+  }
+}

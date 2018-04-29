@@ -1,3 +1,19 @@
 @import "./var.scss";
 @import "./font.scss";
 @import "./mixins.scss";
+
+.title {
+  font-family: $default-font-family;
+  font-size: 1.8em;
+}
+
+.secondary-title {
+  font-family: $default-font-family;
+  font-size: 1.5em;
+}
+
+.body-text {
+  font-family: $default-font-family;
+  font-size: 1em;
+  line-height: 1.8;
+}

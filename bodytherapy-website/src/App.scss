@@ -11,5 +11,100 @@ img {
 body {
   font-family: $default-font-family;
   font-size: $default-font-size;
-  color: $primary-color !important;
+  color: $primary-color;
+}
+
+.hero-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(150deg, $primary-color, $secondary-color);
+
+  .hero-banner-text {
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+      color: $white;
+      text-align: center;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .hero-banner-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 2.3em;
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .hero-banner-text {
+      h2 {
+        font-size: 3.2em;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .title {
+    text-align: center;
+  }
+
+  .body-text {
+    text-align: center;
+  }
+}
+
+.features {
+  .title {
+    text-align: center;
+  }
+}
+
+.technologies {
+  .title {
+    text-align: center;
+  }
+}
+
+.about-me {
+  .title,
+  .secondary-title,
+  .body-text {
+    text-align: center;
+  }
+}
+
+.available-on {
+  padding: 30px 0;
+  background: linear-gradient(150deg, $primary-color, $secondary-color);
+
+  .secondary-title {
+    text-align: center;
+    color: $white;
+  }
 }

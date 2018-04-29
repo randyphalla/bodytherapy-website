@@ -1,0 +1,26 @@
+.footer {
+  padding: 20px 0; }
+  .footer .nav-links {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+    text-align: center; }
+    .footer .nav-links li {
+      display: inline-flex;
+      margin: 0 6px; }
+  .footer .social-links {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+    text-align: center; }
+    .footer .social-links li {
+      display: inline-flex;
+      margin: 0 6px; }
+  .footer .copyrights {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+    text-align: center; }
+    .footer .copyrights li {
+      display: inline-flex;
+      margin: 0 6px; }

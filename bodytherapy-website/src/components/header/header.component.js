@@ -10,18 +10,18 @@ class HeaderComponent extends Component {
         <div className="container mobile-view">
           <div className="row">
             <div className="col-3 menu">
-              <i class="fas fa-bars fa-2x"></i>
+              <i className="fas fa-bars fa-2x"></i>
             </div>
             <div className="col-6 logo">
               <img src={logo} alt="Logo" />
             </div>
             <div className="col-3 email">
-              <i class="far fa-envelope fa-2x"></i>
+              <i className="far fa-envelope fa-2x"></i>
             </div>
           </div>
         </div>
 
-        <div className="container desktop-view">
+        {/* <div className="container desktop-view">
           <div className="row">
             <div className="col-12 col-md-4 logo">
               <img src={logo} alt="Logo" />
@@ -46,7 +46,7 @@ class HeaderComponent extends Component {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </header>
     );

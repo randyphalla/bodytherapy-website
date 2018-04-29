@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './feature-item.component.css';
 
 class FeatureItemComponent extends Component {
   render() {
     return (
-      <div>
+      <div className="feature-item">
         {
           !this.props.rightSide &&
           (
@@ -11,9 +12,9 @@ class FeatureItemComponent extends Component {
               <div className="col-12 col-md-4">
                 <img src={this.props.image} alt={this.props.altTag} />
               </div>
-              <div className="col-12 col-md-8">
-                <h2>{this.props.title}</h2>
-                <p>{this.props.body}</p>
+              <div className="col-12 col-md-8 feature-item-info">
+                <h2 className="secondary-title">{this.props.title}</h2>
+                <p className="body-text">{this.props.body}</p>
               </div>
             </div>
           )
@@ -23,9 +24,9 @@ class FeatureItemComponent extends Component {
           this.props.rightSide &&
           (
             <div className="row">
-              <div className="col-12 col-md-8">
-                <h2>Search therapy centres</h2>
-                <p>Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian.</p>
+              <div className="col-12 col-md-8 feature-item-info right-side">
+                <h2 className="secondary-title">{this.props.title}</h2>
+                <p className="body-text">{this.props.body}</p>
               </div>
               <div className="col-12 col-md-4">
                 <img src={this.props.image} alt={this.props.altTag} />

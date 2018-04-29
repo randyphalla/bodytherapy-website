@@ -1,0 +1,15 @@
+.feature-item {
+  padding: 40px 0; }
+  .feature-item img {
+    margin-bottom: 16px; }
+  @media screen and (min-width: 768px) {
+    .feature-item img {
+      margin-bottom: 0; }
+    .feature-item .feature-item-info {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      text-align: right; }
+      .feature-item .feature-item-info.right-side {
+        text-align: left !important; } }
