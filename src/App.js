@@ -93,7 +93,7 @@ class App extends Component {
                             <h2>We help people that need <span className="bold-text">therapy</span>.</h2>
                           </div>
                           <div className="col-12 col-md-6">
-                            <img src={bannerImage} alt="Hero Image" />
+                            <img src={bannerImage} alt="Hero" />
                           </div>
                         </div>
                       </div>
@@ -101,8 +101,8 @@ class App extends Component {
 
                     <section className="about-us">
                       <div className="container">
-                        <div className="row about-us">
-                          <div className="col-12">
+                        <div className="row about-us justify-content-md-center">
+                          <div className="col-12 col-md-10 col-lg-8">
                             <h2 className="title">We are Body Therapy</h2>
                             <p className="body-text">Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. Ea sea denique phaedrum. Has ne duis conclusionemque, vel quando malorum an, te mei essent iuvaret facilisis. Oblique dissentias quaerendum duo ea, congue doming singulis vis ne, pro id nisl aliquam sanctus.</p>
                           </div>
