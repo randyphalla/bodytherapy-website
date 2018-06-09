@@ -22,39 +22,6 @@ body {
   font-size: 1em;
   color: #0080FF; }
 
-.hero-banner {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: linear-gradient(150deg, #0080FF, #3CC0FA); }
-  .hero-banner .hero-banner-text h2 {
-    font-size: 2em;
-    font-weight: 300;
-    color: #ffffff;
-    text-align: center; }
-  .hero-banner .hero-banner-text .bold-text {
-    font-weight: bold; }
-  .hero-banner img {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  @media screen and (min-width: 768px) {
-    .hero-banner {
-      padding-top: 40px;
-      padding-bottom: 40px; }
-      .hero-banner .hero-banner-text {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .hero-banner .hero-banner-text h2 {
-          font-size: 2.3em;
-          text-align: left; } }
-  @media screen and (min-width: 992px) {
-    .hero-banner {
-      padding-top: 40px;
-      padding-bottom: 40px; }
-      .hero-banner .hero-banner-text h2 {
-        font-size: 3.2em;
-        text-align: left; } }
-
 .about-us {
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -84,32 +51,6 @@ body {
 .technologies {
   padding-top: 20px;
   padding-bottom: 20px; }
-
-.about-me {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center; }
-  .about-me .resume-btn {
-    width: 100%;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    color: #ffffff;
-    background-color: #0080FF;
-    border: none;
-    border-radius: 20px; }
-  @media screen and (min-width: 768px) {
-    .about-me {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      text-align: left; }
-      .about-me .title-left {
-        margin-top: 10px; }
-      .about-me .title-left,
-      .about-me .secondary-title,
-      .about-me .body-text {
-        text-align: left; }
-      .about-me .resume-btn {
-        width: 200px; } }
 
 .available-on .available-on-links {
   padding-left: 0;

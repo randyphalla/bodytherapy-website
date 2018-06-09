@@ -4,10 +4,10 @@ import HeaderComponent from './components/header/header.component';
 import FooterComponent from './components/footer/footer.component';
 import FeatureItemComponent from './components/feature-item/feature-item.component';
 import TechItemComponent from './components/tech-Item/tech-item.component';
+import BannerComponent from './components/banner/banner.component';
+import AboutMeComponent from './components/about-me/about-me.component';
 
 import messageTherapist from './assets/images/message-therapist.png';
-import bannerImage from './assets/images/hero-image.png';
-
 import reactLogo from './assets/images/react-logo.png';
 import reduxLogo from './assets/images/redux-logo.png';
 import firebaseLogo from './assets/images/firebase-logo.png';
@@ -88,18 +88,7 @@ class App extends Component {
 
                     <h1 className="hidden">Main Content</h1>
 
-                    <section className="hero-banner">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-12 col-md-6 hero-banner-text">
-                            <h2>We help people that need <span className="bold-text">therapy</span>.</h2>
-                          </div>
-                          <div className="col-12 col-md-6">
-                            <img src={bannerImage} alt="Hero" />
-                          </div>
-                        </div>
-                      </div>
-                    </section>
+                    <BannerComponent />
 
                     <section className="about-us">
                       <div className="container">
@@ -125,6 +114,7 @@ class App extends Component {
                         <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} rightSide="true" />
 
                         <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} />
+                        
                       </div>
                     </section>
 
@@ -145,32 +135,7 @@ class App extends Component {
                       </div>
                     </section>
 
-                    <section className="about-me">
-
-                      <div className="container">
-
-                        <div className="row">
-                          <div className="col-12">
-                            <h2 className="title">Creator of Body Therapy</h2>
-                          </div>
-                        </div>
-
-                        <div className="row">
-                          <div className="col-12 col-md-4">
-                            <img src="" alt="" />
-                          </div>
-
-                          <div className="col-12 col-md-8">
-                            <h2 className="title title-left">Randy Phalla</h2>
-                            <h3 className="secondary-title">Front End Developer / Graphic Designer</h3>
-                            <p className="body-text">Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. Ea sea denique phaedrum. Has ne duis conclusionemque, vel quando malorum an, te mei essent iuvaret facilisis. Oblique dissentias quaerendum duo ea, congue doming singulis vis ne, pro id nisl aliquam sanctus.</p>
-                            <button className="resume-btn">Resume</button>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </section>
+                    <AboutMeComponent />
 
                     <section className="available-on">
                       <div className="container">

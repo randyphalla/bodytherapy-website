@@ -1,0 +1,40 @@
+@import "../src/assets/scss/shared.scss";
+
+.about-me {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    .resume-btn {
+        width: 100%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+
+        color: $white;
+
+        background-color: $primary-color;
+        border: none;
+        border-radius: 20px;
+    }
+
+
+    @media screen and (min-width: 768px) {       
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: left;
+        
+        .title-left {
+            margin-top: 10px;
+        }
+
+        .title-left, 
+        .secondary-title,
+        .body-text {
+            text-align: left;
+        }
+
+        .resume-btn { 
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.title {
+  font-family: sans-serif;
+  font-size: 1.8em; }
+
+.secondary-title {
+  font-family: sans-serif;
+  font-size: 1.5em; }
+
+.body-text {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.8; }
+
+.about-me {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+  .about-me .resume-btn {
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #ffffff;
+    background-color: #0080FF;
+    border: none;
+    border-radius: 20px; }
+  @media screen and (min-width: 768px) {
+    .about-me {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: left; }
+      .about-me .title-left {
+        margin-top: 10px; }
+      .about-me .title-left,
+      .about-me .secondary-title,
+      .about-me .body-text {
+        text-align: left; }
+      .about-me .resume-btn {
+        width: 200px; } }
