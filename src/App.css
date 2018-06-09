@@ -22,6 +22,16 @@ body {
   font-size: 1em;
   color: #0080FF; }
 
+@media screen and (min-width: 768px) {
+  .show-mobile-only {
+    display: none !important; } }
+
+.show-medium {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .show-medium {
+      display: initial; } }
+
 .about-us {
   padding-top: 40px;
   padding-bottom: 40px; }

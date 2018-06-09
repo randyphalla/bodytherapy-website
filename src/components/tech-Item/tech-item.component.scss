@@ -1,20 +1,19 @@
 .tech-logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 
-    text-align: center;
+  img {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-        width: 50%;
+      width: 70%;
     }
-    
-    @media screen and (min-width: 576px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 70%;
-        }
-    }
+  }
 }

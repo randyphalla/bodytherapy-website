@@ -119,30 +119,30 @@ class App extends Component {
                     </section>
 
                     <section className="technologies">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-12">
-                            <h2 className="title">Technologies</h2>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <TechItemComponent image={reactLogo} altTag="React" />
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12">
+                                    <h2 className="title">Technologies</h2>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <TechItemComponent image={reactLogo} altTag="React" />
 
-                          <TechItemComponent image={reduxLogo} altTag="Redux" />
+                                <TechItemComponent image={reduxLogo} altTag="Redux" />
 
-                          <TechItemComponent image={firebaseLogo} altTag="Firebase" />
+                                <TechItemComponent image={firebaseLogo} altTag="Firebase" />
+                            </div>
                         </div>
-                      </div>
                     </section>
 
                     <AboutMeComponent />
 
                     <section className="available-on">
-                      <div className="container">
-                        <div className="row">
-                              <div className="col-12">
-                                  <h2 className="secondary-title">Available on</h2>
-                                  <ul class="available-on-links">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-12">
+                                    <h2 className="secondary-title">Available on</h2>
+                                    <ul className="available-on-links">
                                         <li>
                                             <a href="#">
                                                 <img src={googlePlay} alt="" />
@@ -153,10 +153,10 @@ class App extends Component {
                                                 <img src={appStore} alt="" />
                                             </a>
                                         </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
                 </main>

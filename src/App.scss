@@ -14,6 +14,20 @@ body {
   color: $primary-color;
 }
 
+.show-mobile-only {
+  @media screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.show-medium {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: initial;
+  }
+}
+
 .about-us {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -58,40 +72,40 @@ body {
 }
 
 .technologies {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .available-on {
-    .available-on-links {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style-type: none;
+  .available-on-links {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
 
-        li {
-            padding-top: 10px;
-            padding-bottom: 10px;
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
 
-            a {
-                img {
-                    width: 100%;
-                }
-            }
+      a {
+        img {
+          width: 100%;
         }
+      }
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        padding-top: 50px;
-        padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-       .available-on-links {
-           text-align: center;
+    .available-on-links {
+      text-align: center;
 
-            li {
-                display: inline-block;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-        } 
+      li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
+  }
 }
