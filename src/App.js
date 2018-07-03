@@ -17,69 +17,63 @@ import appStore from './assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_
 import './App.css';
 
 class App extends Component {
-    features;
-    technologies;
-    socials;
-
     constructor(props) {
         super(props);
 
         this.features = [
           {
-            img: '',
+            img: messageTherapist,
             title: 'Search therapy centres',
-            body: 'Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. ',
-            rightSide: true
+            body: 'Users are able to pick and search for their therapy treatment of choice. Get quick access information about your therapy type/treatment. Find therapies centres based on the choices you made, it will give you a list of clinics that will specialize that specific therapy in your area/location.',
+            rightSide: true,
+            altTag: 'Mock'
           },
           {
-            img: '',
+            img: messageTherapist,
             title: 'Message Therapist',
-            body: 'Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. ',
-            rightSide: false
+            body: 'You and your clinic are able to send messages to each other to schedule appointments, problem and question on your iPhone/Android.',
+            rightSide: false,
+            altTag: 'Mock'
           },
           {
-            img: '',
+            img: messageTherapist,
             title: 'View pictures, videos, notes, and more.',
-            body: 'Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian.',
-            rightSide: true
+            body: 'Users will have the opportunity to view pictures, video and discussions based on the therapy type choice. Users will be able to gain access and valuable information about based users picked. To get more information, go to the discussion page where users and therapist are able to read, view, edit, create, and comment on discussion.',
+            rightSide: true,
+            altTag: 'Mock'
           }
         ];
 
         this.technologies = [
           {
-            img: '',
-            altTag: ''
+            img: reactLogo,
+            name: 'React Native',
+            altTag: 'React Native'
           },
           {
-            img: '',
-            altTag: ''
+            img: reduxLogo,
+            name: 'Redux',
+            altTag: 'Redux'
           },
           {
-            img: '',
-            altTag: ''
-          }
-        ];
-
-        this.socials = [
-          {
-            iconClass: '',
-            altTag: '',
-            link: ''
-          },
-          {
-            iconClass: '',
-            altTag: '',
-            link: ''
-          },
-          {
-            iconClass: '',
-            altTag: '',
-            link: ''
+            img: firebaseLogo,
+            name: 'Firebase',
+            altTag: 'Firebase'
           }
         ];
     }
 
     render() {
+
+        const getFeatures = this.features.map((item) => {
+          return  <FeatureItemComponent key={item.id} title={item.title} body={item.body} image={item.img} rightSide={item.rightSide} />
+        });
+
+
+        const getTechnologies = this.technologies.map((item) => {
+          return <TechItemComponent key={item.id} image={item.img} altTag={item.altTag} />
+        });
+
         return (
             <div>
                 <HeaderComponent />
@@ -95,7 +89,7 @@ class App extends Component {
                         <div className="row about-us justify-content-md-center">
                           <div className="col-12 col-md-10 col-lg-8">
                             <h2 className="title">We are Body Therapy</h2>
-                            <p className="body-text">Lorem ipsum dolor sit amet, mandamus corrumpit reprehendunt te pri, veri quodsi vix an. Nam in abhorreant referrentur, his no inani aperiam efficiantur. Ceteros abhorreant id vim, ad nec choro apeirian. Ea sea denique phaedrum. Has ne duis conclusionemque, vel quando malorum an, te mei essent iuvaret facilisis. Oblique dissentias quaerendum duo ea, congue doming singulis vis ne, pro id nisl aliquam sanctus.</p>
+                            <p className="body-text">Body Therapy application is a therapy application. The objective is to help people who needs therapy, access Information about their therapy type, clinic, pictures, and videos. Communicate with their therapist or clinic from their phone. Help users to find therapy clinics based on their selections.</p>
                           </div>
                         </div>
                       </div>
@@ -109,11 +103,7 @@ class App extends Component {
                           </div>
                         </div>
 
-                        <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} />
-
-                        <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} rightSide="true" />
-
-                        <FeatureItemComponent title="Message Therapist" body="body description" image={messageTherapist} />
+                        {getFeatures}
 
                       </div>
                     </section>
@@ -126,11 +116,9 @@ class App extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <TechItemComponent image={reactLogo} altTag="React" />
 
-                                <TechItemComponent image={reduxLogo} altTag="Redux" />
+                              {getTechnologies}
 
-                                <TechItemComponent image={firebaseLogo} altTag="Firebase" />
                             </div>
                         </div>
                     </section>

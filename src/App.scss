@@ -74,6 +74,15 @@ body {
 .technologies {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 992px) {
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .available-on {

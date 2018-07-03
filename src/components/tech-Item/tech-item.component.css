@@ -11,3 +11,10 @@
       align-items: center; }
       .tech-logo img {
         width: 70%; } }
+  @media screen and (min-width: 768px) {
+    .tech-logo img {
+      width: 130px; } }
+  @media screen and (min-width: 992px) {
+    .tech-logo {
+      padding-top: 30px;
+      padding-bottom: 30px; } }

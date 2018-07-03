@@ -1,18 +1,21 @@
 .title {
   font-family: "Lato", sans-serif;
   font-weight: "900";
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  color: #0080FF; }
 
 .secondary-title {
   font-family: "Lato", sans-serif;
   font-weight: "700";
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #0080FF; }
 
 .body-text {
   font-family: "Open Sans", sans-serif;
   font-weight: "300";
   font-size: 1em;
-  line-height: 1.8; }
+  line-height: 1.8;
+  color: #3F3A3A; }
 
 .hidden {
   display: none; }
@@ -64,6 +67,12 @@ body {
 .technologies {
   padding-top: 20px;
   padding-bottom: 20px; }
+  @media screen and (min-width: 992px) {
+    .technologies .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
 
 .available-on .available-on-links {
   padding-left: 0;
