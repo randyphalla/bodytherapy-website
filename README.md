@@ -17,6 +17,7 @@ Run this command in the terminal `npm run build`. This command will build the pr
 
 # TODO
 - Resize logo icon for manifest
-- Add my resume
+- Add my resume (DONE)
 - Fix Dropdown menu for mobile
 - Get a better profile image
+- Revision of UI
