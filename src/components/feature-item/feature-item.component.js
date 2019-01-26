@@ -24,7 +24,7 @@ class FeatureItemComponent extends Component<FeatureProps, FeatureState> {
 						</div>
 
 						<div className="col-12 col-md-4">
-							<img src={this.props.image} alt={this.props.altTag} />
+							<img src={this.props.image} alt="Mobile Image" />
 						</div>
 
 						<div className="col-12 col-md-8 feature-item-info right-side show-mobile-only">
@@ -35,7 +35,7 @@ class FeatureItemComponent extends Component<FeatureProps, FeatureState> {
 				) : (
 					<div className="row">
 						<div className="col-12 col-md-4">
-							<img src={this.props.image} alt={this.props.altTag} />
+							<img src={this.props.image} alt="Mobile Image" />
 						</div>
 						<div className="col-12 col-md-8 feature-item-info">
 							<h2 className="secondary-title">{this.props.title}</h2>

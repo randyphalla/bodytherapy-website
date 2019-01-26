@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import meImage from '../../assets/images/Self-Portrait.png';
 import './about-me.component.css';
+import RandyPhallaResumePDF from '../../assets/files/randy-phalla-resume.pdf';
 
 class AboutMeComponent extends Component {
 	render() {
@@ -28,7 +29,9 @@ class AboutMeComponent extends Component {
 								web developer & designer. I enjoy working out at the gym, watching movies, tv shows, playing computer
 								games, learn about new technologies, graphic design trends and staying up to date.
 							</p>
-							<button className="resume-btn">Resume</button>
+              <a className="resume-btn" href={RandyPhallaResumePDF} download="Randy Phalla's Resume">
+                Resume
+              </a>
 						</div>
 					</div>
 				</div>

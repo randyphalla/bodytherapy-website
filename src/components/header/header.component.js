@@ -20,7 +20,7 @@ class HeaderComponent extends Component {
 				<div className="container mobile-view">
 					<div className="row">
 						<div className="col-3 menu">
-              <button className="btn btn-link">
+              <button className="btn btn-link" aria-label="Menu">
                 <i className="fas fa-bars fa-2x" />
               </button>
 						</div>
@@ -28,7 +28,7 @@ class HeaderComponent extends Component {
 							<img src={logo} alt="Logo" />
 						</div>
 						<div className="col-3 email">
-              <button className="btn btn-link">
+              <button className="btn btn-link" aria-label="Email">
                 <i className="far fa-envelope fa-2x" />
               </button>
 						</div>
