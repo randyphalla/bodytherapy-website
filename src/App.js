@@ -67,36 +67,24 @@ class App extends Component {
 	}
 
 	render() {
-		const getFeatures = this.features.map(item => {
-			return (
-				<FeatureItemComponent
-					key={item.id}
-					title={item.title}
-					body={item.body}
-					image={item.img}
-					rightSide={item.rightSide}
-				/>
-			);
-		});
-
-		const getTechnologies = this.technologies.map(item => {
-			return <TechItemComponent key={item.id} image={item.img} altTag={item.altTag} />;
-		});
 
 		return (
+
 			<div>
+
 				<HeaderComponent />
 
 				<main className="main-content">
-					<h1 className="hidden">Main Content</h1>
+					<h2 className="hidden">Main Content</h2>
 
 					<BannerComponent />
 
 					<section className="about-us" id="aboutScoll">
+            <h3 className="hidden">About Us</h3>
 						<div className="container">
 							<div className="row about-us justify-content-md-center">
 								<div className="col-12 col-md-10 col-lg-8">
-									<h2 className="title">We are Body Therapy</h2>
+									<h3 className="title">We are Body Therapy</h3>
 									<p className="body-text">
 										Body Therapy application is a therapy application. The objective is to help people who needs
 										therapy, access Information about their therapy type, clinic, pictures, and videos. Communicate with
@@ -109,30 +97,43 @@ class App extends Component {
 					</section>
 
 					<section className="features" id="featureScoll">
+          <h3 className="hidden">Features Section</h3>
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
-									<h2 className="title">Features of Body Therapy</h2>
+									<h4 className="title">Features of Body Therapy</h4>
 								</div>
 							</div>
-							{getFeatures}
+                {
+                  this.features.map((item, i) => {
+                    return <FeatureItemComponent key={i} title={item.title} body={item.body} image={item.img} rightSide={item.rightSide} />
+                  })
+                }
 						</div>
 					</section>
 
 					<section className="technologies" id="technologiesScoll">
+          <h3 className="hidden">Technologies Section</h3>
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
-									<h2 className="title">Technologies</h2>
+									<h4 className="title">Technologies</h4>
 								</div>
 							</div>
-							<div className="row">{getTechnologies}</div>
+              <div className="row">
+                {
+                  this.technologies.map((item, i) => {
+                    return <TechItemComponent key={i} image={item.img}  altTag={item.altTag}  />
+                  })
+                }
+              </div>
 						</div>
 					</section>
 
 					<AboutMeComponent />
 
 					<section className="available-on" id="comingSoonScoll">
+          <h3 className="hidden">Available On Section</h3>
 						<div className="container">
 							<div className="row">
 								<div className="col-12">
@@ -156,6 +157,7 @@ class App extends Component {
 				</main>
 
 				<FooterComponent />
+
 			</div>
 		);
 	}

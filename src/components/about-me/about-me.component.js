@@ -6,10 +6,11 @@ class AboutMeComponent extends Component {
 	render() {
 		return (
 			<section className="about-me"  id="creatorScoll">
+      <h3 className="hidden">About Me</h3>
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
-							<h2 className="title">Creator of Body Therapy</h2>
+							<h4 className="title">Creator of Body Therapy</h4>
 						</div>
 					</div>
 					<div className="row about-me-cont">
@@ -17,8 +18,8 @@ class AboutMeComponent extends Component {
 							<img src={meImage} alt="Profile" />
 						</div>
 						<div className="col-12 col-md-8">
-							<h2 className="title title-left">Randy Phalla</h2>
-							<h3 className="secondary-title">Front End Developer / Graphic Designer</h3>
+							<h4 className="title title-left">Randy Phalla</h4>
+							<h5 className="secondary-title">Front End Developer / Graphic Designer</h5>
 							<p className="body-text">
 								Hello There. I’m Randy Phalla and the creator of Body Therapy. I’m a Graphic Designer & Front-End
 								Developer. I was born and raised in London, Ontario. I graduated from the Fanshawe Graphic Design
