@@ -29,9 +29,11 @@ class AboutMeComponent extends Component {
 								web developer & designer. I enjoy working out at the gym, watching movies, tv shows, playing computer
 								games, learn about new technologies, graphic design trends and staying up to date.
 							</p>
-              <a className="resume-btn" href={RandyPhallaResumePDF} download="Randy Phalla's Resume">
-                Resume
-              </a>
+              <p className="mt-4">
+                <a className="resume-btn" href={RandyPhallaResumePDF} download="Randy Phalla's Resume">
+                  Resume
+                </a>
+              </p>
 						</div>
 					</div>
 				</div>

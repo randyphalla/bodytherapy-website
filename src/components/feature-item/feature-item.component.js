@@ -7,7 +7,7 @@ export type FeatureProps = {
 	image: string,
 	altTag: string,
 	title: string,
-	body: string,
+	body: string
 };
 
 export type FeatureState = {};
