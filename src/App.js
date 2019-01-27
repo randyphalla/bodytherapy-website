@@ -30,7 +30,7 @@ class App extends Component<AppProps, AppState> {
 		super(props);
 
     this.state = {
-      isMobileMenu: true
+      isMobileMenu: false
     }
 
 		this.features = [
